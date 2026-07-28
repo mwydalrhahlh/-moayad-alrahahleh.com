@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحامي مؤيد رحاحله | للمحاماة والاستشارات القانونية</title>
+    <meta name="description" content="المحامي مؤيد رحاحله - محاماة واستشارات قانونية متخصصة في القضايا التجارية والمدنية والجزائية والشرعية. خبرة تزيد عن 10 سنوات في الترافع أمام كافة المحاكم الأردنية.">
+    <meta name="keywords" content="محامي, مؤيد رحاحله, استشارات قانونية, محاماة, الأردن, قضايا تجارية, عقود, ترافع">
+    <meta name="author" content="المحامي مؤيد رحاحله">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="المحامي مؤيد رحاحله | للمحاماة والاستشارات القانونية">
+    <meta property="og:description" content="خبرة تزيد عن 10 سنوات في الترافع أمام كافة المحاكم الأردنية. استشارات قانونية متخصصة في القضايا التجارية والمدنية والجزائية.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moayad-alrahahleh.com">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="المحامي مؤيد رحاحله | للمحاماة والاستشارات القانونية">
+    <meta name="twitter:description" content="خبرة تزيد عن 10 سنوات في الترافع أمام كافة المحاكم الأردنية.">
+
+    <!-- Favicon (SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            bg: '#070a12',
+                            card: '#0f1626',
+                            cardBorder: '#2a364f',
+                            gold: '#dfac6c',
+                            goldHover: '#c89552',
+                            goldLight: '#f6e5ca',
+                            navyDark: '#0a101d',
+                            goldBorder: 'rgba(223, 172, 108, 0.3)',
+                        }
+                    },
+                    fontFamily: {
+                        readex: ['Readex Pro', 'sans-serif'],
+                        amiri: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased">
+
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 z-[100] flex items-center justify-center bg-luxury-bg">
+        <div class="text-center space-y-4">
+            <div class="w-16 h-16 mx-auto rounded-full border-4 border-luxury-gold border-t-transparent animate-spin"></div>
+            <p class="text-luxury-gold text-sm font-bold font-amiri">جاري التحميل...</p>
+        </div>
+    </div>
+
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-luxury-bg/90 backdrop-blur-md border-b border-luxury-goldBorder" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-4 group">
+                    <div class="w-13 h-13 p-3 rounded-xl luxury-gold-bg flex items-center justify-center text-slate-950 font-extrabold text-2xl shadow-xl group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-white tracking-wide font-amiri">المحامي مؤيد رحاحله</span>
+                        <span class="block text-xs text-luxury-gold font-medium tracking-widest mt-0.5">محاماة واستشارات قانونية</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+                    <a href="#hero" class="nav-link text-luxury-gold hover:text-white transition-colors">الرئيسية</a>
+                    <a href="#about" class="nav-link text-slate-300 hover:text-luxury-gold transition-colors">عن المحامي</a>
+                    <a href="#services" class="nav-link text-slate-300 hover:text-luxury-gold transition-colors">التخصصات والقضايا</a>
+                    <a href="#articles" class="nav-link text-slate-300 hover:text-luxury-gold transition-colors">المقالات القانونية</a>
+                    <a href="#faq" class="nav-link text-slate-300 hover:text-luxury-gold transition-colors">أسئلة شائعة</a>
+                    <a href="#contact" class="nav-link text-slate-300 hover:text-luxury-gold transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="tel:0777104910" class="text-xs text-slate-300 hover:text-luxury-gold font-bold flex items-center gap-2 border border-slate-700 px-4 py-2.5 rounded-full transition-colors">
+                        <i class="fa-solid fa-phone text-luxury-gold"></i>
+                        0777104910
+                    </a>
+                    <a href="#booking" class="luxury-gold-bg text-slate-950 font-bold px-6 py-2.5 rounded-full shadow-lg hover:brightness-110 transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-gavel"></i>
+                        طلب استشارة
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white text-2xl focus:outline-none" aria-label="القائمة">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-luxury-card border-b border-luxury-goldBorder px-6 pt-4 pb-8 space-y-4">
+            <a href="#hero" class="block py-2 text-luxury-gold font-semibold">الرئيسية</a>
+            <a href="#about" class="block py-2 text-slate-300 hover:text-luxury-gold">عن المحامي</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-luxury-gold">التخصصات والقضايا</a>
+            <a href="#articles" class="block py-2 text-slate-300 hover:text-luxury-gold">المقالات القانونية</a>
+            <a href="#faq" class="block py-2 text-slate-300 hover:text-luxury-gold">أسئلة شائعة</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-luxury-gold">اتصل بنا</a>
+            <div class="pt-4 border-t border-slate-800 space-y-3">
+                <a href="tel:0777104910" class="block text-center py-2.5 rounded-xl border border-slate-700 text-luxury-gold font-bold transition-colors">
+                    <i class="fa-solid fa-phone me-2"></i> 0777104910
+                </a>
+                <a href="#booking" class="block py-3 text-center luxury-gold-bg text-slate-950 font-bold rounded-xl shadow">
+                    حجز استشارة قانونية
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden bg-gradient-to-b from-luxury-navyDark via-luxury-bg to-luxury-bg">
+
+        <!-- Ambient Lighting -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-600/10 rounded-full blur-[120px] pointer-events-none ambient-float"></div>
+        <div class="absolute top-1/3 right-10 w-96 h-96 bg-blue-900/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Right Text -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-right">
+
+                    <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-luxury-card/90 border border-luxury-goldBorder text-luxury-goldLight text-xs font-semibold tracking-wide reveal">
+                        <i class="fa-solid fa-certificate text-luxury-gold"></i>
+                        مكتب المحامي مؤيد رحاحله للمحاماة والاستشارات القانونية
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-amiri reveal">
+                        الدفاع المتقن والحماية القانونية <br>
+                        <span class="luxury-gold-text">التي تستحقها مصالحكم</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-light reveal">
+                        نقدم خدمات قانونية متكاملة بمهنية عالية ودقة متناهية. خبرة متخصصة في الترافع أمام كافة المحاكم، وصياغة العقود والاستشارات القانونية لحماية حقوق الأفراد والشركات.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 reveal">
+                        <a href="https://wa.me/962777104910" target="_blank" class="luxury-gold-bg text-slate-950 font-bold px-8 py-4 rounded-xl shadow-2xl hover:scale-105 transition-all text-sm sm:text-base flex items-center gap-3 gold-glow">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            استشارة فورية عبر الواتساب
+                        </a>
+                        <a href="tel:0777104910" class="px-8 py-4 rounded-xl border border-slate-700 bg-luxury-card/60 hover:bg-luxury-card text-slate-200 font-semibold transition-all text-sm sm:text-base flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-luxury-gold"></i>
+                            0777104910
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-3 gap-6 pt-10 border-t border-slate-800/80 mt-8 reveal">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-luxury-gold font-amiri">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">سرية وتكتم تام</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-luxury-gold font-amiri">+10</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">سنوات خبرة تخصصية</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-luxury-gold font-amiri">+1000</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">قضية واستشارة ناجحة</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md reveal">
+                        <div class="absolute -inset-1 rounded-3xl luxury-gold-bg opacity-20 blur-xl"></div>
+
+                        <div class="relative rounded-3xl glass-panel p-8 text-center space-y-6">
+
+                            <div class="w-32 h-32 mx-auto rounded-2xl p-1 luxury-gold-bg shadow-2xl flex items-center justify-center">
+                                <div class="w-full h-full rounded-2xl bg-luxury-navyDark flex flex-col items-center justify-center text-luxury-gold border border-luxury-goldBorder">
+                                    <i class="fa-solid fa-scale-balanced text-5xl mb-2"></i>
+                                    <span class="text-[10px] font-bold tracking-widest text-slate-300 uppercase">عدالة • نزاهة • دقة</span>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <h3 class="text-3xl font-bold text-white font-amiri">المحامي مؤيد رحاحله</h3>
+                                <p class="text-luxury-gold font-medium text-xs tracking-wider">مستشار قانوني ومحامي نظامي</p>
+                            </div>
+
+                            <p class="text-xs text-slate-300 leading-relaxed bg-luxury-bg/60 p-4 rounded-xl border border-slate-800">
+                                "العدالة ليست مجرد شعار، بل هي منهج عمل نلتزم به لحماية حقوق موكلينا وتحقيق أفضل النتائج القانونية."
+                            </p>
+
+                            <div class="pt-2 space-y-3">
+                                <a href="https://wa.me/962777104910" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    تواصل مباشرة على الواتساب (0777104910)
+                                </a>
+                                <a href="tel:0777104910" class="w-full py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2 border border-slate-700">
+                                    <i class="fa-solid fa-headset text-luxury-gold"></i>
+                                    الاتصال الفوري بالمكتب
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-luxury-navyDark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
+                <span class="text-luxury-gold font-bold tracking-widest text-xs uppercase">المبادئ والنهج القانوني</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-amiri">عن المحامي مؤيد رحاحله</h2>
+                <div class="w-24 h-1 luxury-gold-bg mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-panel p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all reveal">
+                    <div class="w-14 h-14 rounded-xl luxury-gold-bg flex items-center justify-center text-slate-950 text-2xl font-bold shadow-lg">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white font-amiri">الحماية والوقاية القانونية</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        نعمل على صياغة ودراسة العقود والاتفاقيات بعناية فائقة لتجنيب موكلينا أي ثغرات مستقبليّة وضمان حماية المصالح قبل نشوب النزاعات.
+                    </p>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all reveal">
+                    <div class="w-14 h-14 rounded-xl luxury-gold-bg flex items-center justify-center text-slate-950 text-2xl font-bold shadow-lg">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white font-amiri">الترافع والدفاع المحكم</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        تمثيل قانوني قوي وحازم أمام مختلف أنواع المحاكم والهيئات القضائية والتحكيمية، مع إعداد لوائح ودحوض قانونية مدعومة بالنصوص والأحكام.
+                    </p>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all reveal">
+                    <div class="w-14 h-14 rounded-xl luxury-gold-bg flex items-center justify-center text-slate-950 text-2xl font-bold shadow-lg">
+                        <i class="fa-solid fa-user-lock"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white font-amiri">السرية والأمانة المطلقة</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        نضع السرية المهنية وحفظ أسرار الموكلين وقضاياهم في مقدمة أسرار عملنا، مع التزام كامل بأرقى أخلاقيات مهنة المحاماة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-luxury-bg relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
+                <span class="text-luxury-gold font-bold tracking-widest text-xs uppercase">مجالات الاختصاص</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-amiri">الخدمات والقضايا والاستشارات</h2>
+                <div class="w-24 h-1 luxury-gold-bg mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-xs sm:text-sm">خبرة قانونية متخصصة تغطي القضايا المدنية، التجارية، الجزائية، والشرعية</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="glass-panel p-8 rounded-2xl relative group service-card reveal">
+                    <div class="w-12 h-12 rounded-xl bg-luxury-navyDark border border-slate-700 flex items-center justify-center text-luxury-gold text-2xl mb-6 service-icon-wrap">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 font-amiri">القضايا التجارية والشركات</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                        تأسيس الشركات، تحصيل الديون والمستحقات، حل النزاعات بين الشركاء، وإبرام عقود الشراكة والخدمات التجارية.
+                    </p>
+                    <a href="https://wa.me/962777104910" target="_blank" class="text-luxury-gold hover:text-white font-bold text-xs inline-flex items-center gap-2 transition-colors">
+                        استشر المحامي <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl relative group service-card reveal">
+                    <div class="w-12 h-12 rounded-xl bg-luxury-navyDark border border-slate-700 flex items-center justify-center text-luxury-gold text-2xl mb-6 service-icon-wrap">
+                        <i class="fa-solid fa-house-chimney-crack"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 font-amiri">قضايا العقارات والأراضي</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                        دعاوى الإخلاء، أجور العقارات، نزاعات الملكية والأراضي، وتوثيق عقود البيع والشراء والرهن.
+                    </p>
+                    <a href="https://wa.me/962777104910" target="_blank" class="text-luxury-gold hover:text-white font-bold text-xs inline-flex items-center gap-2 transition-colors">
+                        استشر المحامي <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl relative group service-card reveal">
+                    <div class="w-12 h-12 rounded-xl bg-luxury-navyDark border border-slate-700 flex items-center justify-center text-luxury-gold text-2xl mb-6 service-icon-wrap">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 font-amiri">القضايا المدنية والتعويضات</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                        المطالبات المالية، العقود والتطبيقات، ودعاوى التعويض عن الأضرار المادية والمعنوية والإخلال بالعقود.
+                    </p>
+                    <a href="https://wa.me/962777104910" target="_blank" class="text-luxury-gold hover:text-white font-bold text-xs inline-flex items-center gap-2 transition-colors">
+                        استشر المحامي <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl relative group service-card reveal">
+                    <div class="w-12 h-12 rounded-xl bg-luxury-navyDark border border-slate-700 flex items-center justify-center text-luxury-gold text-2xl mb-6 service-icon-wrap">
+                        <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 font-amiri">القضايا الجزائية والشيكات</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                        الترافع في القضايا الجزائية، جنح الشيكات بدون رصيد، قضايا الاحتيال والجرائم الإلكترونية، والرد المباشر.
+                    </p>
+                    <a href="https://wa.me/962777104910" target="_blank" class="text-luxury-gold hover:text-white font-bold text-xs inline-flex items-center gap-2 transition-colors">
+                        استشر المحامي <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl relative group service-card reveal">
+                    <div class="w-12 h-12 rounded-xl bg-luxury-navyDark border border-slate-700 flex items-center justify-center text-luxury-gold text-2xl mb-6 service-icon-wrap">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 font-amiri">قضايا الأحوال الشخصية والشرعية</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                        التركات وقسمة المواريث، دعاوى النفقات والحضانة، والحلول الودية والقانونية المنظمة للأسر.
+                    </p>
+                    <a href="https://wa.me/962777104910" target="_blank" class="text-luxury-gold hover:text-white font-bold text-xs inline-flex items-center gap-2 transition-colors">
+                        استشر المحامي <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl relative group service-card reveal">
+                    <div class="w-12 h-12 rounded-xl bg-luxury-navyDark border border-slate-700 flex items-center justify-center text-luxury-gold text-2xl mb-6 service-icon-wrap">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 font-amiri">صياغة وتدقيق العقود</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                        إعداد العقود باللغتين العربية والإنجليزية، التدقيق القانوني الشامل، وتقديم الاستشارات السنوية للشركات.
+                    </p>
+                    <a href="https://wa.me/962777104910" target="_blank" class="text-luxury-gold hover:text-white font-bold text-xs inline-flex items-center gap-2 transition-colors">
+                        استشر المحامي <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Articles -->
+    <section id="articles" class="py-24 bg-luxury-navyDark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
+                <div>
+                    <span class="text-luxury-gold font-bold tracking-widest text-xs uppercase">المعرفة والثقافة القانونية</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-amiri mt-1">مقالات ورؤى قانونية</h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-slate-400 text-xs sm:text-sm">مقالات إرشادية بقلم المحامي مؤيد رحاحله</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <article class="glass-panel rounded-2xl overflow-hidden group reveal">
+                    <div class="h-48 bg-luxury-card relative flex items-center justify-center border-b border-slate-800">
+                        <i class="fa-solid fa-book-journal-whills text-6xl text-slate-700 group-hover:text-luxury-gold transition-colors"></i>
+                        <span class="article-tag bg-luxury-gold text-slate-950 font-bold text-[10px] px-3 py-1 rounded-full">القانون التجاري</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-lg font-bold text-white group-hover:text-luxury-gold transition-colors font-amiri">
+                            أهم الشروط والبنود الواجب مراعاتها عند صياغة عقود الشراكة
+                        </h3>
+                        <p class="text-slate-300 text-xs line-clamp-3 leading-relaxed">
+                            استعراض للثغرات القانونية الشائعة في عقود الشراكة والتجارية، وكيفية تنظيم آلية اتخاذ القرار والانسحاب لتفادي النزاعات القضائية.
+                        </p>
+                        <button onclick="openArticleModal('أهم الشروط عند صياغة عقود الشراكة', 'تعتبر عقود الشراكة الحجر الأساس لأي مشروع تجاري ناجح. يوضح المحامي مؤيد رحاحله في هذا المقال أن أهم البنود التي يجب تركيز الانتباه عليها هي: تحديد الالتزامات المالية بدقة، وضع آلية واضحة لحل الخلافات، وتحديد الشروط الدقيقة لفض الشراكة أو تصفيتها، ضماناً لحقوق كافّة الأطراف.')" class="text-luxury-gold hover:text-white text-xs font-bold pt-2 block transition-colors">
+                            قراءة المقال كاملاً <i class="fa-solid fa-arrow-left ms-1"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="glass-panel rounded-2xl overflow-hidden group reveal">
+                    <div class="h-48 bg-luxury-card relative flex items-center justify-center border-b border-slate-800">
+                        <i class="fa-solid fa-handcuffs text-6xl text-slate-700 group-hover:text-luxury-gold transition-colors"></i>
+                        <span class="article-tag bg-luxury-gold text-slate-950 font-bold text-[10px] px-3 py-1 rounded-full">الحماية القانونية</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-lg font-bold text-white group-hover:text-luxury-gold transition-colors font-amiri">
+                            حقوقك القانونية عند التعامل مع الشيكات والكمبيالات
+                        </h3>
+                        <p class="text-slate-300 text-xs line-clamp-3 leading-relaxed">
+                            شرح مفصل لطبيعة الشيك كأداة وفاء وكيفية حماية صاحب الحق وتنفيذ الأحكام القضائية بفاعلية وسرعة.
+                        </p>
+                        <button onclick="openArticleModal('حقوقك القانونية عند التعامل مع الشيكات', 'الشيك في القانون يحظى بالحماية الجزائية والحقوقية. يتناول هذا المقال الإجراءات القانونية الواجب اتخاذها فور رجوع الشيك بدون رصيد، وكيفية رفع الدعوى الجزائية والمطالبة المالية للحصول على المستحقات بدون تأخير.')" class="text-luxury-gold hover:text-white text-xs font-bold pt-2 block transition-colors">
+                            قراءة المقال كاملاً <i class="fa-solid fa-arrow-left ms-1"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="glass-panel rounded-2xl overflow-hidden group reveal">
+                    <div class="h-48 bg-luxury-card relative flex items-center justify-center border-b border-slate-800">
+                        <i class="fa-solid fa-building-user text-6xl text-slate-700 group-hover:text-luxury-gold transition-colors"></i>
+                        <span class="article-tag bg-luxury-gold text-slate-950 font-bold text-[10px] px-3 py-1 rounded-full">قانون المالكين</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-lg font-bold text-white group-hover:text-luxury-gold transition-colors font-amiri">
+                            دليل المالك والمستأجر: حقوق وواجبات الطرفين
+                        </h3>
+                        <p class="text-slate-300 text-xs line-clamp-3 leading-relaxed">
+                            قراءة في قانون المالكين والمستأجرين وأهم حالات طلب الإخلاء المستعجل وتحصيل بدل الإجارة المتأخر.
+                        </p>
+                        <button onclick="openArticleModal('دليل المالك والمستأجر', 'ينظم قانون المالكين والمستأجرين العلاقة التعاقدية بدقة. يشرح المحامي مؤيد رحاحله الحالات الشائعة التي تحق للمالك فيها المطالبة بالإخلاء، وكيفية إثبات الامتناع عن دفع بدل الإجارة بالشكل القانوني السليم.')" class="text-luxury-gold hover:text-white text-xs font-bold pt-2 block transition-colors">
+                            قراءة المقال كاملاً <i class="fa-solid fa-arrow-left ms-1"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Booking Form -->
+    <section id="booking" class="py-24 bg-luxury-bg relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-panel p-8 sm:p-12 rounded-3xl border-2 border-luxury-goldBorder reveal">
+                <div class="text-center space-y-4 mb-10">
+                    <div class="w-16 h-16 rounded-full luxury-gold-bg mx-auto flex items-center justify-center text-slate-950 text-2xl font-extrabold shadow-lg">
+                        <i class="fa-solid fa-balance-scale"></i>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-white font-amiri">حجز استشارة قانونية خاصة</h2>
+                    <p class="text-slate-300 text-xs sm:text-sm">
+                        قم بتعبئة النموذج أدناه لمراجعة قضيتك وتحديد موعد مع المحامي مؤيد رحاحله
+                    </p>
+                </div>
+
+                <form id="consultation-form" onsubmit="handleBooking(event)" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">الاسم الثلاثي *</label>
+                            <input type="text" required placeholder="أدخل اسمك الكريم" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">رقم الهاتف / الواتساب *</label>
+                            <input type="tel" required placeholder="0777104910" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors" dir="ltr">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">نوع القضية / الاستشارة *</label>
+                            <select required class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                                <option value="">اختر مجال الاستشارة</option>
+                                <option value="قضايا تجارية وشركات">قضايا تجارية وشركات</option>
+                                <option value="قضايا مدنية ومطالبات">قضايا مدنية ومطالبات</option>
+                                <option value="عقارات وأراضي">عقارات وأراضي</option>
+                                <option value="جزائية وشيكات">جزائية وشيكات</option>
+                                <option value="صياغة وعقود">صياغة وعقود</option>
+                                <option value="استشارة قانونية عامة">استشارة قانونية عامة</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">طريقة الاستشارة المفضلة</label>
+                            <select class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                                <option value="لقاء مباشر بالمكتب">لقاء مباشر بالمكتب</option>
+                                <option value="استشارة عبر الواتساب">استشارة عبر الواتساب</option>
+                                <option value="مكالمة هاتفية">مكالمة هاتفية</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-2">ملخص مختصر للموضوع القانوني</label>
+                        <textarea rows="4" placeholder="اكتب نبذة عن الاستشارة ليتسنى تحضير المقتضى القانوني..." class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full luxury-gold-bg text-slate-950 font-bold py-4 rounded-xl shadow-xl hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        إرسال طلب الاستشارة
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-luxury-navyDark relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4 reveal">
+                <span class="text-luxury-gold font-bold tracking-widest text-xs uppercase">إجابات قانونية</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-amiri">الأسئلة الشائعة</h2>
+                <div class="w-20 h-1 luxury-gold-bg mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 reveal">
+                    <button onclick="toggleFaq(1)" class="w-full px-6 py-5 text-right font-bold text-white flex justify-between items-center focus:outline-none text-sm sm:text-base">
+                        <span>ما هي المستندات المطلوبة للبدء في القضية؟</span>
+                        <i class="fa-solid fa-chevron-down text-luxury-gold transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-slate-300 text-xs sm:text-sm leading-relaxed" id="faq-content-1">
+                        تختلف المستندات بحسب طبيعة القضية، ولكن بشكل عام يُفضل إحضار جميع العقود، المراسلات، الأوراق المالية، والوثائق الشخصية ذات الصلة بالنزاع لتقييم الموقف القانوني بدقة.
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 reveal">
+                    <button onclick="toggleFaq(2)" class="w-full px-6 py-5 text-right font-bold text-white flex justify-between items-center focus:outline-none text-sm sm:text-base">
+                        <span>كيف يتم الاتفاق على أتعاب المحاماة؟</span>
+                        <i class="fa-solid fa-chevron-down text-luxury-gold transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-slate-300 text-xs sm:text-sm leading-relaxed" id="faq-content-2">
+                        يتم تحديد الأتعاب بشفافية كاملة بعد مراجعة ملف القضية وتحديد حجم الجهد والاستشارات المطلوبة، ويُبرم عقد أتعاب محاماة رسمي يوضح طريقة الدفع والالتزامات بوضوح.
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 reveal">
+                    <button onclick="toggleFaq(3)" class="w-full px-6 py-5 text-right font-bold text-white flex justify-between items-center focus:outline-none text-sm sm:text-base">
+                        <span>هل يمكن تقديم الاستشارة القانونية هاتفياً أو عبر الواتساب؟</span>
+                        <i class="fa-solid fa-chevron-down text-luxury-gold transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-slate-300 text-xs sm:text-sm leading-relaxed" id="faq-content-3">
+                        نعم، يمكن تقديم استشارات سريعة وأولية عبر الواتساب أو الاتصال الهاتفي المباشر على الرقم (0777104910) لتوجيه الموكل للإجراء السليم.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="py-24 bg-luxury-bg border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8 reveal">
+                    <div>
+                        <span class="text-luxury-gold font-bold tracking-widest text-xs uppercase">تواصل مباشر</span>
+                        <h2 class="text-3xl font-extrabold text-white font-amiri mt-2">مكتب المحامي مؤيد رحاحله</h2>
+                        <p class="text-slate-400 text-xs sm:text-sm mt-2">نحن هنا للإجابة على جميع استفساراتكم القانونية وحماية حقوقكم</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <a href="tel:0777104910" class="flex items-center gap-4 glass-panel p-4 rounded-xl hover:border-luxury-gold transition-all">
+                            <div class="w-12 h-12 rounded-xl luxury-gold-bg flex items-center justify-center text-slate-950 font-bold shrink-0 text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">الهاتف المباشر</h4>
+                                <p class="text-luxury-gold font-bold text-base mt-0.5" dir="ltr">0777104910</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/962777104910" target="_blank" class="flex items-center gap-4 glass-panel p-4 rounded-xl hover:border-emerald-500 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center text-white font-bold shrink-0 text-2xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">محادثة واتساب مباشرة</h4>
+                                <p class="text-emerald-400 font-bold text-base mt-0.5" dir="ltr">0777104910</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 glass-panel p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-xl luxury-gold-bg flex items-center justify-center text-slate-950 font-bold shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">العنوان والموقع</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">المملكة الأردنية الهاشمية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7 glass-panel p-8 rounded-3xl reveal">
+                    <h3 class="text-2xl font-bold text-white font-amiri mb-6">إرسال استفسار سريع</h3>
+                    <form onsubmit="handleContactMessage(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" required placeholder="الاسم الكامل" class="bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                            <input type="tel" required placeholder="0777104910" class="bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors" dir="ltr">
+                        </div>
+                        <input type="text" required placeholder="موضوع الاستفسار" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                        <textarea rows="4" required placeholder="اكتب تفاصيل استفسارك..." class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors"></textarea>
+                        <button type="submit" class="luxury-gold-bg text-slate-950 font-bold px-8 py-3.5 rounded-xl hover:brightness-110 transition-all text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> إرسال الاستفسار
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="mt-16 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>جميع الحقوق محفوظة © <span id="year"></span> للمحامي <strong>مؤيد رحاحله</strong></p>
+                <div class="flex gap-4">
+                    <a href="tel:0777104910" class="hover:text-luxury-gold transition-colors">اتصال: 0777104910</a>
+                    <span>•</span>
+                    <a href="https://wa.me/962777104910" target="_blank" class="hover:text-emerald-400 transition-colors">واتساب: 0777104910</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full luxury-gold-bg text-slate-950 flex items-center justify-center text-lg shadow-2xl hover:scale-110 transition-all">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/962777104910" target="_blank" title="تواصل عبر الواتساب" class="whatsapp-float fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform gold-glow">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal-wrapper fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
+        <div class="glass-panel max-w-md w-full p-8 rounded-3xl text-center space-y-4 border-2 border-luxury-gold">
+            <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 mx-auto flex items-center justify-center text-3xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white font-amiri">تم استقبال طلبك بنجاح</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                شكراً لتواصلكم مع مكتب المحامي مؤيد رحاحله. سيتم التواصل معكم مباشرة على الرقم (0777104910) لمتابعة استشارتكم.
+            </p>
+            <button onclick="closeModal('booking-modal')" class="w-full luxury-gold-bg text-slate-950 font-bold py-3 rounded-xl text-sm mt-4">
+                حسناً، إغلاق
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="modal-wrapper fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
+        <div class="glass-panel max-w-2xl w-full p-8 rounded-3xl space-y-6 border border-slate-700 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-start border-b border-slate-800 pb-4">
+                <h3 id="article-modal-title" class="text-2xl font-bold text-white font-amiri">عنوان المقال</h3>
+                <button onclick="closeModal('article-modal')" class="text-slate-400 hover:text-white text-xl transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="article-modal-body" class="text-slate-300 text-sm leading-relaxed space-y-4"></div>
+            <div class="pt-4 border-t border-slate-800 flex justify-end">
+                <button onclick="closeModal('article-modal')" class="px-6 py-2.5 rounded-xl bg-slate-800 text-slate-200 text-xs font-bold hover:bg-slate-700 transition-colors">
+                    إغلاق
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

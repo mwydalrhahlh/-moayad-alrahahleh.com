@@ -1,0 +1,190 @@
+/* ===== luxury-gold-text ===== */
+.luxury-gold-text {
+    background: linear-gradient(135deg, #fff2dd 0%, #dfac6c 50%, #9e7235 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.luxury-gold-bg {
+    background: linear-gradient(135deg, #eed2a7 0%, #dfac6c 50%, #b38342 100%);
+}
+
+.luxury-gold-border {
+    border-image: linear-gradient(to bottom, #dfac6c, rgba(223, 172, 108, 0.1)) 1;
+}
+
+.glass-panel {
+    background: rgba(15, 22, 38, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(223, 172, 108, 0.18);
+    transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+    border-color: rgba(223, 172, 108, 0.45);
+    box-shadow: 0 10px 30px -10px rgba(223, 172, 108, 0.15);
+}
+
+.gold-glow {
+    box-shadow: 0 0 25px rgba(223, 172, 108, 0.25);
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #070a12;
+}
+::-webkit-scrollbar-thumb {
+    background: #dfac6c;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c89552;
+}
+
+/* ===== Smooth scroll ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Selection ===== */
+::selection {
+    background: #dfac6c;
+    color: #020617;
+}
+
+/* ===== Scroll Reveal Animations ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Navbar scroll effect ===== */
+#navbar.scrolled {
+    background: rgba(7, 10, 18, 0.98);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Back to top ===== */
+#back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ===== Loading screen ===== */
+#loading-screen {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ===== Active nav link ===== */
+.nav-link.active {
+    color: #dfac6c;
+}
+
+/* ===== Line clamp utility ===== */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ===== Gold border animation ===== */
+@keyframes goldPulse {
+    0%, 100% { border-color: rgba(223, 172, 108, 0.18); }
+    50% { border-color: rgba(223, 172, 108, 0.5); }
+}
+
+.gold-pulse {
+    animation: goldPulse 3s ease-in-out infinite;
+}
+
+/* ===== Hero ambient animation ===== */
+@keyframes ambientFloat {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -55%) scale(1.05); }
+}
+
+.ambient-float {
+    animation: ambientFloat 8s ease-in-out infinite;
+}
+
+/* ===== Form input focus ===== */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 2px rgba(223, 172, 108, 0.15);
+}
+
+/* ===== WhatsApp float pulse ===== */
+@keyframes whatsappPulse {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+    70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.whatsapp-float {
+    animation: whatsappPulse 2s infinite;
+}
+
+/* ===== Mobile menu transition ===== */
+#mobile-menu {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 500px;
+    opacity: 1;
+    overflow: hidden;
+}
+#mobile-menu.hidden {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* ===== Service card icon hover ===== */
+.service-icon-wrap {
+    transition: all 0.3s ease;
+}
+.service-card:hover .service-icon-wrap {
+    background: #dfac6c;
+    border-color: #dfac6c;
+}
+.service-card:hover .service-icon-wrap i {
+    color: #0a101d;
+}
+
+/* ===== Article tag ===== */
+.article-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* ===== Modal backdrop ===== */
+.modal-backdrop {
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* ===== RTL adjustments for icons ===== */
+.fa-arrow-left {
+    transform: scaleX(-1);
+}
