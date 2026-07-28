@@ -538,18 +538,18 @@
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-medium text-slate-300 mb-2">الاسم الثلاثي *</label>
-                            <input type="text" required placeholder="أدخل اسمك الكريم" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                            <input name="full_name" type="text" required placeholder="أدخل اسمك الكريم" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
                         </div>
                         <div>
                             <label class="block text-xs font-medium text-slate-300 mb-2">رقم الهاتف / الواتساب *</label>
-                            <input type="tel" required placeholder="0777104910" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors" dir="ltr">
+                            <input name="phone" type="tel" required placeholder="0777104910" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors" dir="ltr">
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-medium text-slate-300 mb-2">نوع القضية / الاستشارة *</label>
-                            <select required class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                            <select name="case_type" required class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
                                 <option value="">اختر مجال الاستشارة</option>
                                 <option value="قضايا تجارية وشركات">قضايا تجارية وشركات</option>
                                 <option value="قضايا مدنية ومطالبات">قضايا مدنية ومطالبات</option>
@@ -561,7 +561,7 @@
                         </div>
                         <div>
                             <label class="block text-xs font-medium text-slate-300 mb-2">طريقة الاستشارة المفضلة</label>
-                            <select class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                            <select name="preferred_method" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
                                 <option value="لقاء مباشر بالمكتب">لقاء مباشر بالمكتب</option>
                                 <option value="استشارة عبر الواتساب">استشارة عبر الواتساب</option>
                                 <option value="مكالمة هاتفية">مكالمة هاتفية</option>
@@ -571,12 +571,12 @@
 
                     <div>
                         <label class="block text-xs font-medium text-slate-300 mb-2">ملخص مختصر للموضوع القانوني</label>
-                        <textarea rows="4" placeholder="اكتب نبذة عن الاستشارة ليتسنى تحضير المقتضى القانوني..." class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors"></textarea>
+                        <textarea name="details" rows="4" placeholder="اكتب نبذة عن الاستشارة ليتسنى تحضير المقتضى القانوني..." class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors"></textarea>
                     </div>
 
                     <button type="submit" class="w-full luxury-gold-bg text-slate-950 font-bold py-4 rounded-xl shadow-xl hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2">
                         <i class="fa-solid fa-paper-plane"></i>
-                        إرسال طلب الاستشارة
+                        إرسال عبر واتساب
                     </button>
                 </form>
             </div>
@@ -679,14 +679,15 @@
                     <h3 class="text-2xl font-bold text-white font-cairo mb-6">إرسال استفسار سريع</h3>
                     <form onsubmit="handleContactMessage(event)" class="space-y-4">
                         <div class="grid sm:grid-cols-2 gap-4">
-                            <input type="text" required placeholder="الاسم الكامل" class="bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
-                            <input type="tel" required placeholder="0777104910" class="bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors" dir="ltr">
+                            <input name="contact_name" type="text" required placeholder="الاسم الكامل" class="bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                            <input name="contact_phone" type="tel" required placeholder="0777104910" class="bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors" dir="ltr">
                         </div>
-                        <input type="text" required placeholder="موضوع الاستفسار" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
-                        <textarea rows="4" required placeholder="اكتب تفاصيل استفسارك..." class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors"></textarea>
+                        <input name="subject" type="text" required placeholder="موضوع الاستفسار" class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                        <textarea name="message" rows="4" required placeholder="اكتب تفاصيل استفسارك..." class="w-full bg-luxury-navyDark border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-luxury-gold transition-colors"></textarea>
                         <button type="submit" class="luxury-gold-bg text-slate-950 font-bold px-8 py-3.5 rounded-xl hover:brightness-110 transition-all text-sm flex items-center gap-2">
-                            <i class="fa-solid fa-paper-plane"></i> إرسال الاستفسار
+                            <i class="fa-brands fa-whatsapp"></i> إرسال عبر واتساب
                         </button>
+                        <p class="text-slate-400 text-xs text-center">سيتم فتح محادثة واتساب مباشرة برسالة جاهزة ومنسقة.</p>
                     </form>
                 </div>
             </div>

@@ -93,20 +93,55 @@ function toggleFaq(id) {
 // ===== Booking Form =====
 function handleBooking(event) {
     event.preventDefault();
-    const modal = document.getElementById('booking-modal');
-    if (modal) {
-        modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    }
-    document.getElementById('consultation-form').reset();
+    const form = event.target;
+    const fullName = form.full_name?.value.trim() || '';
+    const phone = form.phone?.value.trim() || '';
+    const caseType = form.case_type?.value.trim() || '';
+    const preferredMethod = form.preferred_method?.value.trim() || '';
+    const details = form.details?.value.trim() || '';
+
+    const message = [
+        'السلام عليكم،',
+        '',
+        'أرغب بحجز استشارة قانونية خاصة:',
+        `الاسم: ${fullName}`,
+        `رقم الهاتف: ${phone}`,
+        `نوع القضية / الاستشارة: ${caseType}`,
+        `طريقة الاستشارة المفضلة: ${preferredMethod}`,
+        details ? `تفاصيل مختصرة: ${details}` : '',
+        '',
+        'شكراً لكم.'
+    ].filter(Boolean).join('\n');
+
+    const url = `https://wa.me/962777104910?text=${encodeURIComponent(message)}`;
+    window.location.href = url;
+    form.reset();
 }
 
 // ===== Contact Form =====
 function handleContactMessage(event) {
     event.preventDefault();
-    const phone = '0777104910';
-    alert(`تم استلام رسالتك، وسيتم التواصل معك مباشرة على الرقم ${phone}.`);
-    event.target.reset();
+    const form = event.target;
+    const name = form.contact_name?.value.trim() || '';
+    const phone = form.contact_phone?.value.trim() || '';
+    const subject = form.subject?.value.trim() || '';
+    const messageText = form.message?.value.trim() || '';
+
+    const message = [
+        'السلام عليكم،',
+        '',
+        'هذا استفسار سريع:',
+        `الاسم: ${name}`,
+        `رقم الهاتف: ${phone}`,
+        `الموضوع: ${subject}`,
+        messageText ? `التفاصيل: ${messageText}` : '',
+        '',
+        'شكراً لكم.'
+    ].filter(Boolean).join('\n');
+
+    const url = `https://wa.me/962777104910?text=${encodeURIComponent(message)}`;
+    window.location.href = url;
+    form.reset();
 }
 
 // ===== Article Modal =====
