@@ -91,6 +91,17 @@ function toggleFaq(id) {
 }
 
 // ===== Booking Form =====
+function openWhatsAppMessage(message) {
+    const url = `https://wa.me/962777104910?text=${encodeURIComponent(message)}`;
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_self';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+}
+
 function handleBooking(event) {
     event.preventDefault();
     const form = event.target;
@@ -113,8 +124,7 @@ function handleBooking(event) {
         'شكراً لكم.'
     ].filter(Boolean).join('\n');
 
-    const url = `https://wa.me/962777104910?text=${encodeURIComponent(message)}`;
-    window.location.href = url;
+    openWhatsAppMessage(message);
     form.reset();
 }
 
@@ -139,8 +149,7 @@ function handleContactMessage(event) {
         'شكراً لكم.'
     ].filter(Boolean).join('\n');
 
-    const url = `https://wa.me/962777104910?text=${encodeURIComponent(message)}`;
-    window.location.href = url;
+    openWhatsAppMessage(message);
     form.reset();
 }
 
