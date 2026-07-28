@@ -80,6 +80,56 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
+// ===== Feature Slider =====
+const featureSlides = document.querySelectorAll('.feature-slide');
+const featureDots = document.querySelectorAll('.feature-dot');
+const featurePrev = document.getElementById('feature-prev');
+const featureNext = document.getElementById('feature-next');
+let featureIndex = 0;
+let featureTimer;
+
+function showFeatureSlide(index) {
+    if (!featureSlides.length) return;
+    featureIndex = (index + featureSlides.length) % featureSlides.length;
+    featureSlides.forEach((slide, i) => slide.classList.toggle('active', i === featureIndex));
+    featureDots.forEach((dot, i) => dot.classList.toggle('active', i === featureIndex));
+}
+
+function startFeatureAutoplay() {
+    stopFeatureAutoplay();
+    featureTimer = setInterval(() => showFeatureSlide(featureIndex + 1), 6000);
+}
+
+function stopFeatureAutoplay() {
+    if (featureTimer) clearInterval(featureTimer);
+}
+
+if (featureSlides.length) {
+    showFeatureSlide(0);
+    startFeatureAutoplay();
+
+    featureDots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            showFeatureSlide(i);
+            startFeatureAutoplay();
+        });
+    });
+
+    if (featurePrev) {
+        featurePrev.addEventListener('click', () => {
+            showFeatureSlide(featureIndex - 1);
+            startFeatureAutoplay();
+        });
+    }
+
+    if (featureNext) {
+        featureNext.addEventListener('click', () => {
+            showFeatureSlide(featureIndex + 1);
+            startFeatureAutoplay();
+        });
+    }
+}
+
 // ===== FAQ Toggle =====
 function toggleFaq(id) {
     const content = document.getElementById(`faq-content-${id}`);
@@ -119,7 +169,7 @@ function openArticleModal(title, content) {
         bodyEl.innerHTML = `
             <p class="text-sm text-slate-200 leading-relaxed">${content}</p>
             <p class="text-luxury-gold text-xs pt-4 border-t border-slate-800 font-bold">
-                بقلم: المحامي مؤيد رحاحله
+                بقلم: الخبير المحامي مؤيد يحيى الرحاحله
             </p>`;
     }
     if (modal) {

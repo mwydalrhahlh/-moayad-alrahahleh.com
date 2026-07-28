@@ -184,6 +184,45 @@ input:focus, select:focus, textarea:focus {
     -webkit-backdrop-filter: blur(8px);
 }
 
+/* ===== Feature slider ===== */
+.feature-track {
+    position: relative;
+    min-height: 340px;
+}
+
+.feature-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: translateX(20px) scale(0.99);
+    pointer-events: none;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.feature-slide.active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    pointer-events: auto;
+}
+
+.feature-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.35);
+    transition: all 0.3s ease;
+}
+
+.feature-dot.active {
+    width: 28px;
+    background: linear-gradient(135deg, #eed2a7 0%, #dfac6c 50%, #b38342 100%);
+    box-shadow: 0 0 18px rgba(223, 172, 108, 0.35);
+}
+
+.luxury-panel-soft {
+    background: linear-gradient(180deg, rgba(15, 22, 38, 0.95), rgba(10, 16, 29, 0.95));
+}
+
 /* ===== RTL adjustments for icons ===== */
 .fa-arrow-left {
     transform: scaleX(-1);
