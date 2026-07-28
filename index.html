@@ -203,10 +203,18 @@
 
                         <div class="relative rounded-3xl glass-panel p-8 text-center space-y-6">
 
-                            <div class="w-32 h-32 mx-auto rounded-2xl p-1 luxury-gold-bg shadow-2xl flex items-center justify-center">
-                                <div class="w-full h-full rounded-2xl bg-luxury-navyDark flex flex-col items-center justify-center text-luxury-gold border border-luxury-goldBorder">
-                                    <i class="fa-solid fa-scale-balanced text-5xl mb-2"></i>
-                                    <span class="text-[10px] font-bold tracking-widest text-slate-300 uppercase">عدالة • نزاهة • دقة</span>
+                            <div class="w-40 h-40 mx-auto rounded-full p-1 luxury-gold-bg shadow-2xl flex items-center justify-center overflow-hidden">
+                                <div class="relative w-full h-full rounded-full bg-luxury-navyDark border border-luxury-goldBorder overflow-hidden">
+                                    <img
+                                        src="assets/profile.jpg"
+                                        alt="المحامي مؤيد رحاحله"
+                                        class="w-full h-full object-cover object-center"
+                                        onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                                    >
+                                    <div class="hidden w-full h-full flex flex-col items-center justify-center text-luxury-gold">
+                                        <i class="fa-solid fa-scale-balanced text-5xl mb-2"></i>
+                                        <span class="text-[10px] font-bold tracking-widest text-slate-300 uppercase">عدالة • نزاهة • دقة</span>
+                                    </div>
                                 </div>
                             </div>
 
